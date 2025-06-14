@@ -1,0 +1,15 @@
+//String reverse
+function reverse(s) {
+  return s.split("").reverse().join("");
+}
+console.log(reverse("Mahesh"))
+
+//String reverse using iteratiion
+function reversed(s) {
+  var o = '';
+  for (var i = s.length - 1; i >= 0; i--){
+    o += s[i];
+    return o;
+  }
+}
+console.log(reversed("Mahesh")) 
