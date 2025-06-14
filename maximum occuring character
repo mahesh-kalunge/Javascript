@@ -1,3 +1,5 @@
+// find the most frequent character in string
+
 function mostFrequentChar(arr) {
   let frequency = {};
   let maxChar = null;
