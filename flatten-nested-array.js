@@ -32,13 +32,13 @@ function flattenArrayIterative(arr) {
   }
   return result.reverse(); // Because LIFO
 }
-const nestedArray = [1, [2, [3, 4], 5], 6];
-console.log(flattenArrayIterative(nestedArray)); // [1, 2, 3, 4, 5, 6]
+const nestedArray1 = [1, [2, [3, 4], 5], 6];
+console.log(flattenArrayIterative(nestedArray1)); // [1, 2, 3, 4, 5, 6]
 
 
 
 //Using Array.prototype.flat()
 
-const nestedArray = [1, [2, [3, 4], 5], 6];
-const flat = nestedArray.flat(Infinity);
+const nestedArray2 = [1, [2, [3, 4], 5], 6];
+const flat = nestedArray2.flat(Infinity);
 console.log(flat); // [1, 2, 3, 4, 5, 6]
