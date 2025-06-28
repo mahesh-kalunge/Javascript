@@ -6,7 +6,7 @@ function flattenArray(arr) {
   }, []);
 }
 
-const nestedArray = [1, [2, [3, 4], 5], 6];                       
+var nestedArray = [1, [2, [3, 4], 5], 6];                       
 const flatArray = flattenArray(nestedArray);
 console.log(flatArray); // Output: [1, 2, 3, 4, 5, 6]
 
