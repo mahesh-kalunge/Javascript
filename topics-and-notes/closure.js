@@ -2,14 +2,14 @@
 // A closure give you access to the outer function's scope from inner function 
 // (this means inner function will have access to outer function's scope)
 
-function outer(){
-    var outerVar=20;  
-    function inner(){
-        console.log(outerVar);   
+function outer() {
+    var outerVar = 20;
+    function inner() {
+        console.log(outerVar);
     }
     return inner
 }
- var outerVar=10;    //global variable so it will call first
+var outerVar = 10;    //global variable so it will call first
 console.log(outerVar);
 var closureFun = outer()
 closureFun()
@@ -20,7 +20,7 @@ closureFun()
 // var keyword jb hm use krte hain, wo block scope nhi hota hai, is time i ka value global scope me update hota jata hai, isliye last me hmko 6 milta hai jhan pe for loop stop hota hai.
 
 function y() {
-    for(let i=1; i<=5; i++){
+    for (let i = 1; i <= 5; i++) {
         setTimeout(() => {
             console.log(i)
         }, i * 1000);
@@ -38,5 +38,20 @@ function x() {
     }
     return y;
 }
-var z = x();   
+var z = x();
 z();
+
+// example 3
+
+console.log(1);  // Synchronous → prints immediately
+setTimeout(function () {
+    console.log(2)  // Finally runs from macrotask queue
+}, 0)
+Promise.resolve().then(function () {
+    console.log(3)    //All microtasks are executed in order, immediately after synchronous code finishes.
+})
+    .then(function () {
+        console.log(4)
+    })
+
+//1 3 4 2
