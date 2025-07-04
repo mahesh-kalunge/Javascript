@@ -1,4 +1,4 @@
-//-------Call, apply and bind example-------
+
  
  function fullName(greet){
  	return greet + " " + this.firstName + " " + this.lastName
