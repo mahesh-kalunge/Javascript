@@ -109,18 +109,8 @@ const students = [
 ];
 
 const groupedByAge = groupBy(students, 'age');
-
 console.log(groupedByAge);
-// Output:
-// {
-//   20: [
-//     { name: 'A', age: 20 },
-//     { name: 'B', age: 20 }
-//   ],
-//   21: [
-//     { name: 'C', age: 21 }
-//   ]
-// }
+
 ```
 
 
