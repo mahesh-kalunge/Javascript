@@ -113,6 +113,18 @@ console.log(groupedByAge);
 
 ```
 
+**Array sort**    
+  Find the second largest number in a JavaScript array.
+
+ ```javascript
+
+let arr = [22.5, 55, 88, 45, 89, 45, 90, 11];
+
+const sortUnique = [... new Set(arr)].sort((a, b) => b - a);
+const secondLargest = sortUnique[1];
+console.log(scondLargest);    //89
+```
+
 
 
 
