@@ -125,6 +125,19 @@ const secondLargest = sortUnique[1];
 console.log(scondLargest);    //89
 ```
 
+**Flatten Array**
+  Write a JavaScript function to flatten a nested array into a single-dimensional array.
+  `Input: [1, [2, [3, 4], 5], 6]`
+  `Output: [1, 2, 3, 4, 5, 6]`
+```javascript
+function flattenArray(array){
+  return array.reduce((flat, item) =>{
+    return flat.concat(Array.isArray(item)? flattenArray(item): item);
+  })
+}
+flattenArray([1,2,[3,4],5],6])
+```
+
 
 
 
