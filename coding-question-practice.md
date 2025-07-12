@@ -53,7 +53,7 @@ console.log(output);
 ```
 
 **Convert Array of Strings to Object Format**  
-  Given an array of strings like `["apple", "banana", "cherry"]`, convert it into an object where each element is a key with a default value.  
+  1. Given an array of strings like `["apple", "banana", "cherry"]`, convert it into an object where each element is a key with a default value.  
   **Example**: `{ "apple": 0, "banana": 0, "cherry": 0 }`.
 
   ```javascript
@@ -70,6 +70,19 @@ console.log(output);
   console.log(result);
   // Output: { apple: 0, banana: 0, cherry: 0 }
 
+  ```
+  2. Count how many times each element appears in an array.
+`Input: ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']`
+`Output: { apple: 3, banana: 2, orange: 1 }`
+
+```javascript
+  function countOccurrence(array){
+    return array.reduce((acc, item) =>{
+      acc[item] = ( acc[item] || 0) + 1;
+      return acc;
+    });
+  }
+  countOccurrence(['apple', 'banana', 'apple', 'orange', 'banana', 'apple'])
   ```
 
   **Array Mapping**  
