@@ -19,6 +19,14 @@ for (let [key, value] of map) {
   console.log(key, value); // Iterable
 }
 
+//map methods
+console.log(map.get('name'));  //return value
+console.log(map.set('age', 30));  //set the value of key and return map
+console.log(map.delete('age')); //Delete the entry and return true
+console.log(map.has('name'));   //Return true if the map has key provider
+map.clear();       //Clear all map
+console.log(map.size);   //0
+
 
 //Weakset example
 const weakMap = new WeakMap();
