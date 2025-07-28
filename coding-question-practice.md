@@ -146,7 +146,7 @@ console.log(scondLargest);    //89
 function flattenArray(array){
   return array.reduce((flat, item) =>{
     return flat.concat(Array.isArray(item)? flattenArray(item): item);
-  })
+  }, [])
 }
 flattenArray([1,2,[3,4],5],6])
 ```
